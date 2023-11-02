@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Axl Monreal</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html" class="nav__link"><img src="images/opc.png" alt="logo"></a>
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigator">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="index.html#testimonials" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="index.html#footer" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Home Section-->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Jump Guy</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Unity 2D platform game</p>
+            <img src="images/jumpguyscreen.JPG" alt="screenshot website store" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>The Jump Guy was my first 2d mini game developed in unity during my first month in the bootcamp.</p>
+            <p>The game has a player controller wich allow the player move using the awsd or keyboard arrows. Also the player can jump using the space bar. It also, has the code necessary to detect collision with the obstacle and when the player collect coins.</p>
+            <!--img src="images/description-website-store.PNG" alt=""-->
+            <div class="video-container">
+                <div class="custom-play-button" onclick="toggleVideo()">
+                    <div class="play-icon"></div>
+                </div>
+                <video id="gameplay-video" poster="images/jumpguy.JPG">
+                    <source src="media/Jump Guy Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <script src="JS/video.js"></script>
+            <p>I create a script to for generating new platforms, obstacles, and pickups as the player progresses. Finally I integrate a mini menu to start and restart the game as needed.</p>           
+            <p>You can play this game on PC here: <a href="https://axlmonreal.com/jump-guy/" target="_blank">https://axlmonreal.com/jump-guy/</a></p>
+        </div>
+        
+
+        <footer class="footer" id="footer">
+            <!--a href="mailto:axlmonreal@gmail.com" class="footer-link">axlmonreal@gmail.com</a-->
+            <ul class="social-list">
+                <!--Linkedin-->
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/axl-monreal/" target="_blank" class="social-list__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <!--Email-->
+                <li class="social-list__item">
+                    <a href="mailto:axlmonreal@gmail.com" target="_blank" class="social-list__link">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </li>
+                <!--Phone Me-->
+                <li class="social-list__item">
+                    <a href="tel:236-334-5322" target="_blank" class="social-list__link">
+                        <i class="fas fa-phone-square"></i>                        
+                    </a>
+                </li>
+                <!--GitHub-->
+                <li class="social-list__item">
+                    <a href="https://github.com/Axl9418" target="_blank" class="social-list__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <!--Resume-->
+                <li class="social-list__item">
+                    <a href="https://drive.google.com/file/d/1O4bsiTYdzch6_sf6NqHvubqsOjMyGoYM/view?usp=sharing" target="_blank" class="social-list__link">
+                        <i class="far fa-file-pdf"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="JS/index.js"></script>
+
+    </body>
+</html>
