@@ -17,12 +17,13 @@
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+       
 
     </head>
     <body>
         <header>
             <div class="logo">
-                <a href="index.html" class="nav__link"><img src="images/opc.png" alt="logo"></a>
+                <a href="index.html" class="nav__link"><img src="images/amonreal_logo.png" alt="logo"></a>
             </div>
 
             <button class="nav-toggle" aria-label="toggle navigator">
@@ -46,7 +47,7 @@
                 Hello, I am <strong>Axl Monreal</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Software/Game Developer</p>
-            <img src="images/axlmonreal.jpeg" alt="a picture of Axl Monreal" class="intro__img">
+            <img src="images/avatar-axl-monreal.jpeg" alt="a picture of Axl Monreal" class="intro__img">
         </section>
 
         <!--My Services-->
@@ -136,7 +137,7 @@
                 </div>
             </div>
 
-            <img src="images/about.jpg" alt="Axl Monreal" class="about-me__img">            
+            <img src="images/avatar-axl-monreal-vr.jpeg" alt="Axl Monreal" class="about-me__img">            
 
         </section>
 
@@ -145,24 +146,48 @@
             <h2 class="section__title section__title--projects">My Projects</h2>
             <p class="section__subtitle section__subtitle--projects">A selection of my range of work</p>
 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio-carousel">
+                <!--Takitos Adventure-->
+                <a href="Interactive-Book.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Interactive Book</h3>
+                    <img src="images/world.png" alt="" class="portfolio__img">
+                </a>
+                <!--Takitos Adventure-->
+                <a href="Takitos-Adventure.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Takito's Adventure</h3>
+                    <img src="images/capture1.png" alt="" class="portfolio__img">
+                </a>
+                <!--Jump Guy-->
+                <a href="Jump-guy.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Jump Guy</h3>
+                    <img src="images/jumpguy.jpg" alt="" class="portfolio__img">
+                </a>
+                <!--Maze game-->
+                <a href="Maze-game.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Maze Game</h3>
+                    <img src="images/maze.PNG" alt="" class="portfolio__img">
+                </a>
+                <!--Weather API-->
+                <a href="Weather-API.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Weather API</h3>
+                    <img src="images/clear.PNG" alt="" class="portfolio__img">
+                </a>
                 <!--Website Store-->
                 <a href="DistrictFactory-Website.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Website</h3>
                     <img src="images/website-store.PNG" alt="" class="portfolio__img">
                 </a>
                 <!--Kanban Board-->
                 <a href="Kanban-board.html" class="portfolio__item">
+                    <h3 class="portfolio__title">Kanban Board</h3>
                     <img src="images/kanban.PNG" alt="" class="portfolio__img">
                 </a>
-                <!--Shop Online-->
-                <a href="DistrictFactory-Shop.html" class="portfolio__item">
-                    <img src="images/shop1.PNG" alt="" class="portfolio__img">
-                </a>
-                <!--2d game-->
-                <a href="Jump-guy.html" class="portfolio__item">
-                    <img src="images/jumpguy.jpg" alt="" class="portfolio__img">
-                </a>
             </div>
+
+            <!--div class="carousel-buttons">
+                <button class="carousel-btn prev-btn">&larr;</button>
+                <button class="carousel-btn next-btn">&rarr;</button>
+            </div-->
         </section>
 
         <!--Testimonials-->
@@ -181,7 +206,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                         <div class="image">
@@ -224,7 +249,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                         <div class="image">
@@ -252,12 +277,6 @@
                         <i class="fas fa-envelope-square"></i>
                     </a>
                 </li>
-                <!--Phone Me-->
-                <li class="social-list__item">
-                    <a href="tel:236-334-5322" target="_blank" class="social-list__link">
-                        <i class="fas fa-phone-square"></i>                        
-                    </a>
-                </li>
                 <!--GitHub-->
                 <li class="social-list__item">
                     <a href="https://github.com/Axl9418" target="_blank" class="social-list__link">
@@ -265,18 +284,20 @@
                     </a>
                 </li>
                 <!--Resume-->
-                <li class="social-list__item">
-                    <a href="https://drive.google.com/file/d/1Ff6basn5eP-YKh_LlN8abfAQ4CDELRip/view?usp=sharing" target="_blank" class="social-list__link">
+                <!--li class="social-list__item">
+                    <a href="https://drive.google.com/file/d/1A9M7EL-QtCZN94zudVgPecLwz8Shl_La/view?usp=drive_link" target="_blank" class="social-list__link">
                         <i class="far fa-file-pdf"></i>
                     </a>
-                </li>
+                </li-->
             </ul>
         </footer>
 
         <script src="JS/index.js"></script>
+        <!--script src="JS/carousel.js"></script-->
 
         <!--a id="scrollToTop" href="#" class="scrollToTop"><i class="fas fa-caret-square-up"></i></a-->
         <a href="#" id="toTopBtn" class="scrollToTop" data-abc="true"><i class="far fa-arrow-alt-circle-up"></i></a>
         
     </body>
+    
 </html>
