@@ -693,5 +693,44 @@ header {
     max-height: 40px;
     object-fit: contain;
   }
+
+  
+  /*SKILLS*/
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .skill-badge {
+    background: #3c82f6;
+    color: #ffffff;
+    width: 160px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: background 0.3s;
+    text-align: center;
+    padding: 8px;
+    white-space: normal; /* allow wrapping */
+    overflow-wrap: break-word;
+  }
+  
+  .skill-badge i, .skill-badge svg {
+    font-size: 1.3em; /* Slightly bigger icons */
+  }
+  
+  .skill-badge:hover {
+    background: #2563eb;
+    cursor: default;
+  }
   
   
